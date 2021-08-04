@@ -1,0 +1,231 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins','Open sans',sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    z-index: 999;
+}
+
+/* Header Section */
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/bg-hero-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+nav .nav-btn {
+    cursor: pointer;
+    width: 15%;
+    transition: .4s;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+nav .nav-btn:hover {
+    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, .5);
+}
+
+nav .logo {
+    width: 16%;
+    height: 16%;
+}
+
+/* Content Section */
+
+header .content {
+    padding-bottom: 100px !important;
+}
+
+header .content .container .row .main-heading {
+    font-size: 2.5rem;
+}
+
+header .content .container .row .sub-heading {
+    font-family: 'Open sans';
+    font-weight: 400;
+}
+
+header .content .container .row .link {
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 50px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+header .content .container .row .link:hover {
+    background-color: hsl(322, 96%, 79%);
+}
+
+header .content .container .row img {
+    width: 100%;
+}
+
+/* Main Section */
+
+main {
+    padding: 20vh 0 50vh 0;
+}
+
+main p {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+
+main .container .row .col .grow-svg,
+main .container .row .col .flow-svg,
+main .container .row .col .your-svg {
+    width: 100%;
+}
+
+#give,#flow,#user {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.102);
+    border-radius: 30px;
+    padding: 20px 10px;
+}
+
+/* Start Page Section */
+.start-page {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.185);
+    padding: 50px 30px;
+    border-radius: 30px;
+    width: 70%;
+    margin: auto;
+    transform: translateY(100px);
+}
+
+.start-page a {
+    text-decoration: none;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 50px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.start-page a:hover {
+    background-color: hsl(322, 96%, 79%);
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 15% 0;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer .info li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer ul li i {
+    transition: .2s;
+}
+
+.footer ul li i{
+    border: 1px solid white;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.footer ul li i:hover {
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+
+.footer .footer-subheading {
+    font-size: 12px;
+    margin-top: 65%;
+}
+
+.footer .social li {
+    margin-top: 60px;
+}
+
+/* Devices Breakpoints */
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 50px !important;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav .nav-btn{
+        width: 40%;
+    }
+
+    nav {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    nav .logo {
+        width: 35% !important;
+        height: 35% !important;
+    }
+
+    main {
+        padding-top: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    main .text-2 {
+        margin-top: 30px;
+    }
+
+    .start-page {
+        width: 100%;
+    }
+
+    .footer {
+        padding-top: 200px;
+    }
+
+    .footer .info {
+        justify-content: flex-start !important;
+    }
+
+    .footer .social {
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .footer .footer-subheading {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
